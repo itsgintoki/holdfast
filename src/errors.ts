@@ -1,0 +1,1 @@
+export class SeatsUnavailableError extends Error {}
