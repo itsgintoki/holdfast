@@ -1,0 +1,1 @@
+ALTER TABLE "units" ADD CONSTRAINT "units_held_has_hold" CHECK ("units"."status" <> 'held' OR "units"."hold_id" IS NOT NULL);
