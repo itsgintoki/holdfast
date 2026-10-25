@@ -7,6 +7,8 @@
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "test": "vitest run",
+    "test:invariants": "vitest run test/holdSeats.concurrency.test.ts test/holdAnySeats.concurrency.test.ts --repeats 49",
+    "bench": "tsx bench/holds.ts",
     "typecheck": "tsc --noEmit",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate"

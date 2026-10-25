@@ -1,0 +1,60 @@
+{
+  "generatedAt": "2026-10-25T17:48:50.536Z",
+  "databaseUrl": "postgres://holdfast:holdfast@localhost:5432/holdfast_test",
+  "poolMax": 20,
+  "node": "v22.22.1",
+  "results": [
+    {
+      "strategy": "specific",
+      "buyers": 1,
+      "inventory": 1,
+      "samples": 100,
+      "successes": 1,
+      "meanBatchMs": 10.65,
+      "p50BatchMs": 10.54,
+      "p95BatchMs": 12.83,
+      "maxBatchMs": 30.07,
+      "meanPerBuyerMs": 10.65,
+      "buyersPerSecond": 93.93
+    },
+    {
+      "strategy": "any-N",
+      "buyers": 1,
+      "inventory": 1,
+      "samples": 100,
+      "successes": 1,
+      "meanBatchMs": 9.12,
+      "p50BatchMs": 9.16,
+      "p95BatchMs": 12,
+      "maxBatchMs": 14.14,
+      "meanPerBuyerMs": 9.12,
+      "buyersPerSecond": 109.64
+    },
+    {
+      "strategy": "specific",
+      "buyers": 1000,
+      "inventory": 100,
+      "samples": 5,
+      "successes": 100,
+      "meanBatchMs": 1507.3,
+      "p50BatchMs": 1402.75,
+      "p95BatchMs": 1806.45,
+      "maxBatchMs": 1806.45,
+      "meanPerBuyerMs": 1.51,
+      "buyersPerSecond": 663.44
+    },
+    {
+      "strategy": "any-N",
+      "buyers": 1000,
+      "inventory": 100,
+      "samples": 5,
+      "successes": 100,
+      "meanBatchMs": 1669.28,
+      "p50BatchMs": 1691.34,
+      "p95BatchMs": 1784.2,
+      "maxBatchMs": 1784.2,
+      "meanPerBuyerMs": 1.67,
+      "buyersPerSecond": 599.06
+    }
+  ]
+}
